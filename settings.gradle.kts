@@ -1,8 +1,12 @@
 rootProject.name = "IndicBoard"
+/*
+
+*/
 /**
  * @author Score2
  * @version 1.2
- */
+ *//*
+
 class MergeBuilder {
     val nodes: MutableList<String>
 
@@ -60,8 +64,10 @@ setupSubproject("indicboard-common") {
     projectDir = file("common")
 }
 
-MergeBuilder("version-control")
-    .merge("indicboard-bukkit")
-    .merge("indicboard-bungee")
-    .merge("indicboard-sponge")
-    .merge("indicboard-velocity")
+MergeBuilder("version-control").also {
+    it.add("indicboard-bukkit")
+    it.add("indicboard-bungee")
+    it.add("indicboard-sponge")
+    it.add("indicboard-velocity")
+}
+*/
